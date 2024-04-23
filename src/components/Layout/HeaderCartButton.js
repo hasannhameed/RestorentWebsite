@@ -4,7 +4,7 @@ const HeaderCartButton = props => {
     return <button className={classes.button}>
 
         <span className={classes.icon}>
-\          < CartIcon/>
+           < CartIcon/>
         </span>
         <span>
             Your Card

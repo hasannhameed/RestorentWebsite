@@ -1,16 +1,19 @@
-import classes from './MealsSummery.module.css'
-const MealsSummery = () => {
-    return(
-      <section className={classes.summery}>
-          <h2>Delicious Food, Delivery To You</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius provident quia molestias, nemo velit maiores! Voluptates tempora corporis magni iure!
-        </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam consequatur quam quis minima eveniet nesciunt doloremque expedita, a nulla.
-        </p>
-      </section>
-    )
-}
+import classes from './MealsSummery.module.css';
 
-export default MealsSummery;
+const MealsSummary = () => {
+  return (
+    <section className={classes.summery}>
+      <h2>Delicious Food, Delivered To You</h2>
+      <p>
+        Choose your favorite meal from our broad selection of available meals
+        and enjoy a delicious lunch or dinner at home.
+      </p>
+      <p>
+        All our meals are cooked with high-quality ingredients, just-in-time and
+        of course by experienced chefs!
+      </p>
+    </section>
+  );
+};
+
+export default MealsSummary;
