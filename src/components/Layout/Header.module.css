@@ -26,17 +26,9 @@
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
   }
-  .button {
-    padding: 10px 20px;
-    background-color: #441805;
-    color: #fff;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
+  
 
-  .inbutton {
+  /* .inbutton {
     padding: 5px 10px;
     background-color:  #8a2b06;
     color: #fff;
@@ -44,7 +36,7 @@
     border-radius: 18px;
     cursor: pointer;
     font-size: 1rem;
-  }
+  } */
   
   /* h1 {
     margin: 0;
