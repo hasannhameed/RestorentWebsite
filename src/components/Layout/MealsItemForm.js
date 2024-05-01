@@ -10,7 +10,8 @@ const MealsItemForm = (props) => {
     const addItemToCart = (event) =>{
         event.preventDefault();
         //update the cartcntx.items
-        // cartctnx.addItem(props.item)
+        const quantity = document.getElementById('amount'+props.id).value
+         cartctnx.addItem({...props.item,quantity:quantity})
         console.log('after addItemsToCart',CartContext);
         
     }
@@ -18,7 +19,7 @@ const MealsItemForm = (props) => {
         {console.log(cartctnx)}
          <Input
           label="Amount" input={{
-            id: 'amount',
+            id: 'amount'+props.id,
             type:'number',
             min: '1',
             max: '5',

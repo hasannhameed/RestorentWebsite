@@ -44,3 +44,29 @@
     background-color: #8a2b06;
     color: white;
   }
+
+  /* Cart.module.css */
+
+.cart-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  color: #888;
+}
+
+.item-quantity {
+  color: #888;
+}

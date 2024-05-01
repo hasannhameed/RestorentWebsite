@@ -1,24 +1,35 @@
+import { useState } from 'react';
 import CartContext from './cart-contex';
 
 const CartProvider = props => {
-    let items = [];
-    const addItemToCartHandler = item => {
-        items.push(item)
-        console.log('inside addItemToCartHandler',cartContext)
-       
+    const [items, setItems] = useState([]);
+    
+    const addItemToCartHandler = (item) => {
+        setItems(prevItems => [...prevItems, item]);
     };
-    const removeItemFromCartHandler = id => {};
+    
+    const removeItemFromCartHandler = id => {
+        // Implement removing item logic here
+    };
+
+    const totalAmount = items.reduce((acc, item) => acc + item.amount, 0);
 
     const cartContext = {
-        items:items,
-        totalAmount: 0,
+        items: items,
+        totalAmount: totalAmount,
         addItem: addItemToCartHandler,
         removeItem: removeItemFromCartHandler,
         message: 'Click here'
     };
-    return <CartContext.Provider value={cartContext}>
-            {console.log("inside cartContext cartContext",cartContext)}
-            {props.children}
+
+    console.log("inside CartProvider cartContext", cartContext);
+
+    return (
+        <CartContext.Provider 
+        value={cartContext}>
+        {props.children}
         </CartContext.Provider>
+    );
 };
+
 export default CartProvider;
